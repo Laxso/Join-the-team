@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -21,8 +22,6 @@
         href="app.css"
     >
 
-    <!-- Google Fonts -->
-
     <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
@@ -32,284 +31,103 @@
     <style>
 
 
-        /* ========================= */
+        /* ================================================= */
         /* GENERAL */
-        /* ========================= */
+        /* ================================================= */
 
         body {
-
             font-family: Arial, sans-serif;
-
             margin: 0;
-
             padding: 0;
-
             scroll-behavior: smooth;
-
         }
 
 
         header,
         footer {
-
             background-color: #333;
-
             color: white;
-
             text-align: center;
-
             padding: 15px 0;
-
         }
 
 
         nav {
-
             display: flex;
-
             flex-direction: column;
-
             align-items: center;
-
         }
 
 
         nav ul {
-
             list-style-type: none;
-
             padding: 0;
-
             margin: 0;
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             gap: 10px;
-
         }
 
 
         nav ul li {
-
             display: inline;
-
             margin: 0;
-
         }
 
 
         nav ul li a {
-
+            color: white;
             text-decoration: none;
-
+            font-size: 18px;
         }
 
 
         main {
-
             padding: 20px;
-
         }
 
 
         section {
-
             margin-bottom: 50px;
-
         }
 
 
         .hero {
-
             background-color: #ccc;
-
             text-align: center;
-
             padding: 100px 20px;
-
         }
 
 
         .about-section,
         .artist-section {
-
             padding: 50px;
-
             background-color: #f4f4f4;
-
         }
 
 
         .game-grid {
-
             display: flex;
-
             gap: 20px;
-
         }
 
 
         .game-item {
-
             flex: 1;
-
             text-align: center;
-
         }
 
 
         footer {
-
             margin-top: 50px;
-
         }
 
 
 
-        /* ========================= */
-        /* BUTTON STYLES */
-        /* ========================= */
-
-        .divinity-btn {
-
-            background: linear-gradient(
-                45deg,
-                #ff9800,
-                #ff1971,
-                #9c27b0,
-                #3f51b5,
-                #2196f3,
-                #120447
-            );
-
-            color: #fff;
-
-            font-size: 14px;
-
-            font-weight: bold;
-
-            padding: 10px 20px;
-
-            border: none;
-
-            border-radius: 25px;
-
-            cursor: pointer;
-
-            box-shadow:
-                0 4px 6px rgba(0,0,0,0.3);
-
-            transition:
-                transform 0.2s,
-                box-shadow 0.2s;
-
-        }
-
-
-
-        .insta-btn {
-
-            background: linear-gradient(
-                45deg,
-                #f58529,
-                #dd2a7b,
-                #8134af,
-                #515bd4
-            );
-
-            color: white;
-
-            font-size: 14px;
-
-            font-weight: bold;
-
-            padding: 10px 20px;
-
-            border: none;
-
-            border-radius: 25px;
-
-            cursor: pointer;
-
-            box-shadow:
-                0 4px 6px rgba(0,0,0,0.3);
-
-        }
-
-
-
-        .youtube-btn {
-
-            background: linear-gradient(
-                45deg,
-                #ff1919,
-                #ad1616,
-                #7c1010,
-                #470404
-            );
-
-            color: white;
-
-            font-size: 14px;
-
-            font-weight: bold;
-
-            padding: 10px 20px;
-
-            border: none;
-
-            border-radius: 25px;
-
-            cursor: pointer;
-
-            box-shadow:
-                0 4px 6px rgba(0,0,0,0.3);
-
-        }
-
-
-
-        .email-btn {
-
-            background: linear-gradient(
-                45deg,
-                #0d47a1,
-                #2196f3,
-                #ffffff
-            );
-
-            color: #0d47a1;
-
-            font-size: 14px;
-
-            font-weight: bold;
-
-            padding: 10px 20px;
-
-            border: none;
-
-            border-radius: 25px;
-
-            cursor: pointer;
-
-            box-shadow:
-                0 4px 6px rgba(0,0,0,0.3);
-
-            transition:
-                transform 0.2s,
-                box-shadow 0.2s;
-
-        }
-
-
-
-        /* ========================= */
-        /* NAV BUTTON */
-        /* ========================= */
+        /* ================================================= */
+        /* NAV BUTTONS */
+        /* ================================================= */
 
         .nav-button {
 
@@ -324,13 +142,11 @@
             color: white;
 
             font-size: 14px;
-
             font-weight: bold;
 
             padding: 10px 18px;
 
             border: none;
-
             border-radius: 20px;
 
             cursor: pointer;
@@ -338,6 +154,16 @@
             box-shadow:
                 0 4px 6px rgba(0,0,0,0.3);
 
+        }
+
+
+
+        /* ================================================= */
+        /* LEARN MORE BUTTON */
+        /* ================================================= */
+
+        #learnMoreButton {
+            color: white !important;
         }
 
 
@@ -395,15 +221,77 @@
 
 
 
-        /* ========================= */
-        /* BOUNCE ANIMATION */
-        /* ========================= */
+        /* ================================================= */
+        /* SOCIAL BUTTONS */
+        /* ================================================= */
+
+        .insta-btn {
+
+            background: linear-gradient(
+                45deg,
+                #f58529,
+                #dd2a7b,
+                #8134af,
+                #515bd4
+            );
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            padding: 12px 20px;
+
+            border: none;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
+
+        }
+
+
+        .youtube-btn {
+
+            background: linear-gradient(
+                45deg,
+                #ff1919,
+                #ad1616,
+                #7c1010,
+                #470404
+            );
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            padding: 12px 20px;
+
+            border: none;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
+
+        }
+
+
+
+        /* ================================================= */
+        /* BOUNCE */
+        /* ================================================= */
 
         .bounce-item:hover {
-
-            animation:
-                bounce 0.6s ease infinite;
-
+            animation: bounce 0.6s ease infinite;
         }
 
 
@@ -411,20 +299,34 @@
 
             0%,
             100% {
-
-                transform:
-                    translateY(0);
-
+                transform: translateY(0);
             }
-
 
             50% {
-
-                transform:
-                    translateY(-8px);
-
+                transform: translateY(-8px);
             }
 
+        }
+
+
+
+        /* ================================================= */
+        /* PC VIEW */
+        /* ================================================= */
+
+        body.pc-view .phone-tab {
+            display: block;
+            margin-bottom: 50px;
+        }
+
+
+        body.pc-view .phone-tab > summary {
+            display: none;
+        }
+
+
+        body.pc-view .phone-tab-content {
+            display: block !important;
         }
 
 
@@ -447,7 +349,7 @@
 
 
 
-        /* Smaller logo in Phone View */
+        /* LOGO */
 
         body.phone-view header nav > img {
 
@@ -461,7 +363,7 @@
 
 
 
-        /* Navigation buttons move left */
+        /* NAV */
 
         body.phone-view header nav ul {
 
@@ -491,9 +393,6 @@
         }
 
 
-
-        /* Smaller buttons */
-
         body.phone-view header nav ul li button,
         body.phone-view #toggleView {
 
@@ -507,7 +406,7 @@
 
 
 
-        /* Phone view button stays in separate section */
+        /* PHONE MODE BUTTON */
 
         body.phone-view .view-mode-section {
 
@@ -521,26 +420,187 @@
 
 
 
-        /* Smaller page spacing */
+        /* PHONE MAIN */
 
         body.phone-view main {
+            padding: 10px;
+        }
+
+
+
+        /* ================================================= */
+        /* PHONE HOME */
+        /* ================================================= */
+
+        body.phone-view #home {
+
+            display: block;
+
+            margin-bottom: 12px;
+
+            padding: 35px 15px;
+
+            border-radius: 10px;
+
+        }
+
+
+        /* Hide Learn More in phone mode */
+
+        body.phone-view #learnMoreButton {
+            display: none;
+        }
+
+
+
+        /* ================================================= */
+        /* PHONE TABS */
+        /* ================================================= */
+
+        body.phone-view .phone-tab {
+
+            display: block;
+
+            width: 100%;
+
+            margin: 0 0 12px 0;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            background-color: #f4f4f4;
+
+            box-shadow:
+                0 4px 10px rgba(0,0,0,0.15);
+
+        }
+
+
+
+        body.phone-view .phone-tab > summary {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 16px 18px;
+
+            cursor: pointer;
+
+            list-style: none;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            color: white;
+
+            background: linear-gradient(
+                45deg,
+                #ff1971,
+                #ad16a5,
+                #51107c,
+                #120447
+            );
+
+        }
+
+
+
+        body.phone-view
+        .phone-tab
+        > summary::-webkit-details-marker {
+
+            display: none;
+
+        }
+
+
+
+        body.phone-view
+        .phone-tab
+        > summary::after {
+
+            content: "▼";
+
+            font-size: 13px;
+
+            transition:
+                transform 0.3s ease;
+
+        }
+
+
+
+        body.phone-view
+        .phone-tab[open]
+        > summary::after {
+
+            transform: rotate(180deg);
+
+        }
+
+
+
+        body.phone-view
+        .phone-tab
+        > summary:hover {
+
+            filter: brightness(1.15);
+
+        }
+
+
+
+        body.phone-view
+        .phone-tab-content {
+
+            padding: 20px;
+
+            background-color: #f4f4f4;
+
+        }
+
+
+
+        body.phone-view
+        .phone-tab-content
+        section {
+
+            margin: 0;
+
+        }
+
+
+
+        body.phone-view
+        .about-section,
+
+        body.phone-view
+        .artist-section {
 
             padding: 10px;
 
         }
 
 
-        body.phone-view .artist-section,
-        body.phone-view .about-section {
 
-            padding: 20px;
+        body.phone-view
+        .game-grid {
+
+            flex-direction: column;
 
         }
 
 
-        body.phone-view .game-grid {
 
-            flex-direction: column;
+        body.phone-view
+        .social-container {
+
+            gap: 25px !important;
 
         }
 
@@ -564,10 +624,7 @@
     <nav>
 
 
-
-        <!-- ========================= -->
         <!-- LOGO -->
-        <!-- ========================= -->
 
         <img
 
@@ -585,9 +642,9 @@
 
 
 
-        <!-- ========================= -->
+        <!-- ================================================= -->
         <!-- NAVIGATION -->
-        <!-- ========================= -->
+        <!-- ================================================= -->
 
         <ul>
 
@@ -598,13 +655,8 @@
             <li>
 
                 <a
-
-                    href="https://laxso.github.io/Divinity-Games/"
-
-                    target="_blank"
-
+                    href="#home"
                     style="text-decoration:none;"
-
                 >
 
                     <button
@@ -612,6 +664,52 @@
                     >
 
                         Home
+
+                    </button>
+
+                </a>
+
+            </li>
+
+
+
+            <!-- ABOUT -->
+
+            <li>
+
+                <a
+                    href="#about"
+                    style="text-decoration:none;"
+                >
+
+                    <button
+                        class="bounce-item nav-button"
+                    >
+
+                        About
+
+                    </button>
+
+                </a>
+
+            </li>
+
+
+
+            <!-- GAMES -->
+
+            <li>
+
+                <a
+                    href="#games"
+                    style="text-decoration:none;"
+                >
+
+                    <button
+                        class="bounce-item nav-button"
+                    >
+
+                        Games
 
                     </button>
 
@@ -649,7 +747,7 @@
 
 
 
-            <!-- JOIN THE TEAM -->
+            <!-- JOIN TEAM -->
 
             <li>
 
@@ -681,7 +779,7 @@
 
 
         <!-- ================================================= -->
-        <!-- SWITCH VIEW SECTION -->
+        <!-- VIEW MODE -->
         <!-- ================================================= -->
 
         <div class="view-mode-section">
@@ -712,7 +810,7 @@
 
 
 <!-- ================================================= -->
-<!-- MAIN CONTENT -->
+<!-- MAIN -->
 <!-- ================================================= -->
 
 <main>
@@ -720,165 +818,53 @@
 
 
     <!-- ================================================= -->
-    <!-- MUSIC RECRUITMENT -->
+    <!-- HOME -->
     <!-- ================================================= -->
 
     <section
 
-        id="music"
+        id="home"
 
-        class="artist-section"
+        class="hero"
 
     >
 
 
         <h2>
 
-            Interested in Becoming a Music Game Dev?
+            Welcome to Divinity Games
 
         </h2>
 
 
-
         <p>
 
-            Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled.
-            However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.
+            Experience the future of gaming without microtransactions, battle passes, or pay-to-win strategies.
 
         </p>
 
 
 
-        <div
-            style="margin-top:20px;"
+        <button
+
+            id="learnMoreButton"
+
+            class="bounce-item nav-button"
+
+            style="
+                font-size:16px;
+                padding:12px 25px;
+                border-radius:25px;
+                color:white;
+            "
+
+            onclick="learnMore()"
+
         >
 
+            Learn More
 
-            <a
-
-                href="https://www.instagram.com/mr_blue_the_game_dev"
-
-                target="_blank"
-
-                style="text-decoration:none;"
-
-            >
-
-                <button
-                    class="insta-btn bounce-item"
-                >
-
-                    Instagram
-
-                </button>
-
-            </a>
-
-
-
-            <a
-
-                href="mailto:divinitygames004@gmail.com"
-
-                style="text-decoration:none;"
-
-            >
-
-                <button
-                    class="email-btn bounce-item"
-                >
-
-                    Email Us
-
-                </button>
-
-            </a>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- ================================================= -->
-    <!-- CHARACTER ARTIST RECRUITMENT -->
-    <!-- ================================================= -->
-
-    <section
-
-        id="character-artist-section"
-
-        class="artist-section"
-
-    >
-
-
-        <h2>
-
-            Interested in Becoming an Art Game Dev?
-
-        </h2>
-
-
-
-        <p>
-
-            Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled.
-            However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.
-
-        </p>
-
-
-
-        <div
-            style="margin-top:20px;"
-        >
-
-
-            <a
-
-                href="https://www.instagram.com/mr_blue_the_game_dev"
-
-                target="_blank"
-
-                style="text-decoration:none;"
-
-            >
-
-                <button
-                    class="insta-btn bounce-item"
-                >
-
-                    Instagram
-
-                </button>
-
-            </a>
-
-
-
-            <a
-
-                href="mailto:divinitygames004@gmail.com"
-
-                style="text-decoration:none;"
-
-            >
-
-                <button
-                    class="email-btn bounce-item"
-                >
-
-                    Email Us
-
-                </button>
-
-            </a>
-
-
-        </div>
+        </button>
 
 
     </section>
@@ -889,211 +875,480 @@
     <!-- SOCIAL MEDIA -->
     <!-- ================================================= -->
 
-    <section
+    <details
 
-        id="social-media"
+        class="phone-tab"
 
-        class="about-section"
+        id="social-tab"
 
-        style="text-align:center;"
+        open
 
     >
 
 
-        <h2>
+        <summary>
 
             Follow Us
 
-        </h2>
+        </summary>
 
 
 
-        <div
-
-            style="
-                display:flex;
-                justify-content:center;
-                align-items:flex-start;
-                gap:60px;
-                flex-wrap:wrap;
-                margin-top:20px;
-            "
-
-        >
+        <div class="phone-tab-content">
 
 
+            <section
 
-            <!-- ========================= -->
-            <!-- INSTAGRAM -->
-            <!-- ========================= -->
+                id="social-media"
 
-            <div
+                class="about-section"
 
-                style="
-                    text-align:center;
-                    max-width:280px;
-                "
+                style="text-align:center;"
 
             >
 
 
-                <a
+                <h2>
 
-                    href="https://www.instagram.com/mr_blue_the_game_dev?igsh=MWlvbnVzZWFlMm1laQ%3D%3D&utm_source=qr"
+                    Follow Us
 
-                    target="_blank"
-
-                    style="text-decoration:none;"
-
-                >
-
-
-                    <button
-                        class="bounce-item insta-btn"
-                    >
-
-                        Instagram
-
-                    </button>
-
-
-                </a>
+                </h2>
 
 
 
                 <div
-                    style="margin-top:12px;"
+
+                    class="social-container"
+
+                    style="
+                        display:flex;
+                        justify-content:center;
+                        align-items:flex-start;
+                        gap:60px;
+                        flex-wrap:wrap;
+                        margin-top:20px;
+                    "
+
                 >
 
 
-                    <img
 
-                        src="IMG_0521.jpg"
+                    <!-- INSTAGRAM -->
 
-                        alt="Instagram QR Code"
-
-                        class="bounce-item"
+                    <div
 
                         style="
-                            max-width:200px;
-                            width:100%;
-                            border-radius:12px;
+                            text-align:center;
+                            max-width:280px;
                         "
 
                     >
 
 
+                        <a
 
-                    <p
+                            href="https://www.instagram.com/mr_blue_the_game_dev?igsh=MWlvbnVzZWFlMm1laQ%3D%3D&utm_source=qr"
+
+                            target="_blank"
+
+                            style="text-decoration:none;"
+
+                        >
+
+
+                            <button
+                                class="bounce-item insta-btn"
+                            >
+
+                                Instagram
+
+                            </button>
+
+
+                        </a>
+
+
+
+                        <div
+                            style="margin-top:12px;"
+                        >
+
+
+                            <img
+
+                                src="IMG_0521.jpg"
+
+                                alt="Instagram QR Code"
+
+                                class="bounce-item"
+
+                                style="
+                                    max-width:200px;
+                                    width:100%;
+                                    border-radius:12px;
+                                "
+
+                            >
+
+
+
+                            <p
+
+                                style="
+                                    margin-top:8px;
+                                    font-size:16px;
+                                    font-weight:bold;
+                                "
+
+                            >
+
+                                @mr_blue_the_game_dev
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- YOUTUBE -->
+
+                    <div
 
                         style="
-                            margin-top:8px;
-                            font-size:16px;
-                            font-weight:bold;
-                            color:#fff;
+                            text-align:center;
+                            max-width:280px;
                         "
 
                     >
 
-                        @mr_blue_the_game_dev
 
-                    </p>
+                        <a
+
+                            href="https://www.youtube.com/@mrblue6014"
+
+                            target="_blank"
+
+                            style="text-decoration:none;"
+
+                        >
+
+
+                            <button
+                                class="bounce-item youtube-btn"
+                            >
+
+                                YouTube
+
+                            </button>
+
+
+                        </a>
+
+
+
+                        <div
+                            style="margin-top:12px;"
+                        >
+
+
+                            <img
+
+                                src="IMG_0522.jpg"
+
+                                alt="YouTube QR Code"
+
+                                class="bounce-item"
+
+                                style="
+                                    max-width:200px;
+                                    width:100%;
+                                    border-radius:12px;
+                                "
+
+                            >
+
+
+
+                            <p
+
+                                style="
+                                    margin-top:8px;
+                                    font-size:16px;
+                                    font-weight:bold;
+                                "
+
+                            >
+
+                                Mr Blue's YouTube Channel
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
 
 
                 </div>
 
 
-            </div>
-
-
-
-            <!-- ========================= -->
-            <!-- YOUTUBE -->
-            <!-- ========================= -->
-
-            <div
-
-                style="
-                    text-align:center;
-                    max-width:280px;
-                "
-
-            >
-
-
-                <a
-
-                    href="https://www.youtube.com/@mrblue6014"
-
-                    target="_blank"
-
-                    style="text-decoration:none;"
-
-                >
-
-
-                    <button
-                        class="bounce-item youtube-btn"
-                    >
-
-                        YouTube
-
-                    </button>
-
-
-                </a>
-
-
-
-                <div
-                    style="margin-top:12px;"
-                >
-
-
-                    <img
-
-                        src="IMG_0522.jpg"
-
-                        alt="YouTube QR Code"
-
-                        class="bounce-item"
-
-                        style="
-                            max-width:200px;
-                            width:100%;
-                            border-radius:12px;
-                        "
-
-                    >
-
-
-
-                    <p
-
-                        style="
-                            margin-top:8px;
-                            font-size:16px;
-                            font-weight:bold;
-                            color:#fff;
-                        "
-
-                    >
-
-                        Mr Blue's YouTube Channel
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
+            </section>
 
 
         </div>
 
 
-    </section>
+    </details>
+
+
+
+    <!-- ================================================= -->
+    <!-- ABOUT DIVINITY GAMES -->
+    <!-- ================================================= -->
+
+    <details
+
+        class="phone-tab"
+
+        id="about-tab"
+
+        open
+
+    >
+
+
+        <summary>
+
+            What is Divinity Games?
+
+        </summary>
+
+
+
+        <div class="phone-tab-content">
+
+
+            <section
+
+                id="about"
+
+                class="about-section"
+
+            >
+
+
+                <h2>
+
+                    What is Divinity Games?
+
+                </h2>
+
+
+                <p>
+
+                    Divinity Games is a passion-driven indie game development studio aiming to create games that focus on player enjoyment and fun. Founded by gamers, for gamers.
+
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+
+    </details>
+
+
+
+    <!-- ================================================= -->
+    <!-- ABOUT ME -->
+    <!-- ================================================= -->
+
+    <details
+
+        class="phone-tab"
+
+        id="about-me-tab"
+
+        open
+
+    >
+
+
+        <summary>
+
+            About Me
+
+        </summary>
+
+
+
+        <div class="phone-tab-content">
+
+
+            <section
+
+                id="about-me"
+
+                class="about-section"
+
+            >
+
+
+                <h2>
+
+                    About Me
+
+                </h2>
+
+
+
+                <p>
+
+                    Hey, I’m Mr. Blue, and here’s a little about me. I was born and raised in Texas, and growing up, I moved around a lot from school to school. But through all that change, video games and tabletop games have always been my constant source of fun and joy.
+
+                </p>
+
+
+
+                <p>
+
+                    As a gamer, I’ve explored everything from Nintendo to Xbox, PlayStation to PC. I’ve got more games than I could count. I’ve spent years diving into countless worlds and stories, and video games have always been there for me, through both the highs and the lows. They’ve taught me problem-solving, strategy, and the simple reminder to kick back and breathe every once in a while. I wouldn’t trade those experiences for anything.
+
+                </p>
+
+
+
+                <p>
+
+                    Now, I’d be lying if I said I didn’t have concerns about the future of gaming. A lot of AAA companies these days are all about profits rather than player enjoyment. Many of the folks running these companies are more businessmen than gamers, focusing on microtransactions, battle passes, and pre-order DLCs which, if you ask me, feels like selling an incomplete game.
+
+                </p>
+
+
+
+                <p>
+
+                    I’m no business guru, just a simple gamer in my twenties, and I want to create games that bring back that joy and nostalgia I’ve experienced over the years so that someone else can experience those same feelings.
+
+                </p>
+
+
+
+                <p>
+
+                    Whether it’s narrative-driven adventures, strategic card games, or MMORPGs that aren’t pay-to-win, I’m all about games that prioritize fun and player enjoyment. I may be starting small with a visual novel and maybe that isn’t everyone’s cup of tea, but you have to start small to go somewhere big.
+
+                </p>
+
+
+
+                <p>
+
+                    One thing’s for sure, Divinity Games is founded
+
+                    <b>
+                        <i>
+
+                            By Gamers, For Gamers
+
+                        </i>
+                    </b>.
+
+                    That’s what we’re all about. Games have always been there for me, and I want to create something that’ll do the same for others. That’s what drives me.
+
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+
+    </details>
+
+
+
+    <!-- ================================================= -->
+    <!-- CURRENT PROJECT -->
+    <!-- ================================================= -->
+
+    <details
+
+        class="phone-tab"
+
+        id="games-tab"
+
+        open
+
+    >
+
+
+        <summary>
+
+            Current Project
+
+        </summary>
+
+
+
+        <div class="phone-tab-content">
+
+
+            <section
+
+                id="games"
+
+                class="about-section"
+
+            >
+
+
+                <h2>
+
+                    What's Our Current Project About?
+
+                </h2>
+
+
+
+                <p>
+
+                    It’s a visual novel where you play as a college student who’s hit rock bottom and is slowly rediscovering his purpose. This romance-comedy blends lighthearted chaos with deeper, emotional storytelling. Touching on mature themes like mental health, sexual themes, and personal loss. While there’s no 18+ patch or nudity planned, the story contains adult language and suggestive content, and is intended for a mature audience.
+
+                </p>
+
+
+
+                <p>
+
+                    You start off flying under the radar but soon get roped into a struggling board games club filled with a colorful cast of characters. There’s Emi, the seemingly perfect club president with hidden layers, Aiko, your sporty and teasing childhood friend, Yui, a teacher who’s secretly a gaming nerd, Mika, a rich idol with her own reasons for joining, and Ken, your laid-back, ever-supportive best friend.
+
+                </p>
+
+
+
+                <p>
+
+                    Expect quirky moments, fierce rivalries like the Wenga League, and all the ups and downs of college romance. With laughs, surprises, and the chance for something deeper, every choice pulls you further into a story packed with humor, drama, and dare I say the thrill of building relationships.
+
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+
+    </details>
 
 
 </main>
@@ -1125,8 +1380,104 @@
 <script>
 
 
+
     /* ================================================= */
-    /* PHONE / PC VIEW SWITCH */
+    /* LEARN MORE */
+    /* ================================================= */
+
+    function learnMore() {
+
+
+        const aboutTab =
+            document.getElementById(
+                "about-tab"
+            );
+
+
+        if (
+            document.body.classList.contains(
+                "phone-view"
+            )
+        ) {
+
+            aboutTab.open =
+                true;
+
+        }
+
+
+        document
+            .querySelector(
+                "#about"
+            )
+            .scrollIntoView({
+
+                behavior:
+                    "smooth"
+
+            });
+
+
+    }
+
+
+
+    /* ================================================= */
+    /* CLOSE ALL PHONE TABS */
+    /* ================================================= */
+
+    function closeAllTabs() {
+
+
+        document
+            .querySelectorAll(
+                ".phone-tab"
+            )
+            .forEach(
+
+                function(tab) {
+
+                    tab.open =
+                        false;
+
+                }
+
+            );
+
+
+    }
+
+
+
+    /* ================================================= */
+    /* OPEN ALL PC SECTIONS */
+    /* ================================================= */
+
+    function openAllTabs() {
+
+
+        document
+            .querySelectorAll(
+                ".phone-tab"
+            )
+            .forEach(
+
+                function(tab) {
+
+                    tab.open =
+                        true;
+
+                }
+
+            );
+
+
+    }
+
+
+
+    /* ================================================= */
+    /* PHONE / PC SWITCH */
     /* ================================================= */
 
     function toggleViewMode() {
@@ -1143,9 +1494,9 @@
 
 
 
-        /* ========================= */
-        /* SWITCH TO PHONE */
-        /* ========================= */
+        /* ================================================= */
+        /* PC -> PHONE */
+        /* ================================================= */
 
         if (
             body.classList.contains(
@@ -1168,13 +1519,16 @@
                 "Switch to PC View";
 
 
+            closeAllTabs();
+
+
         }
 
 
 
-        /* ========================= */
-        /* SWITCH BACK TO PC */
-        /* ========================= */
+        /* ================================================= */
+        /* PHONE -> PC */
+        /* ================================================= */
 
         else {
 
@@ -1193,8 +1547,112 @@
                 "Switch to Phone View";
 
 
+            openAllTabs();
+
+
         }
 
+
+    }
+
+
+
+    /* ================================================= */
+    /* OPEN PHONE TAB FROM NAV */
+    /* ================================================= */
+
+    function openPhoneTab(
+        tabID
+    ) {
+
+
+        if (
+            document.body.classList.contains(
+                "phone-view"
+            )
+        ) {
+
+
+            const tab =
+                document.getElementById(
+                    tabID
+                );
+
+
+            if (tab) {
+
+                tab.open =
+                    true;
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+    /* ================================================= */
+    /* ABOUT BUTTON */
+    /* ================================================= */
+
+    document
+        .querySelector(
+            'a[href="#about"]'
+        )
+        .addEventListener(
+
+            "click",
+
+            function() {
+
+                openPhoneTab(
+                    "about-tab"
+                );
+
+            }
+
+        );
+
+
+
+    /* ================================================= */
+    /* GAMES BUTTON */
+    /* ================================================= */
+
+    document
+        .querySelector(
+            'a[href="#games"]'
+        )
+        .addEventListener(
+
+            "click",
+
+            function() {
+
+                openPhoneTab(
+                    "games-tab"
+                );
+
+            }
+
+        );
+
+
+
+    /* ================================================= */
+    /* PAGE LOAD */
+    /* ================================================= */
+
+    if (
+        document.body.classList.contains(
+            "pc-view"
+        )
+    ) {
+
+        openAllTabs();
 
     }
 
@@ -1208,5 +1666,4 @@
 
 </body>
 
-</html>
 </html>
