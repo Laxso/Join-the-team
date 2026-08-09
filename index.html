@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Divinity Games</title>
+
     <link rel="stylesheet" href="app.css">
-    <!-- Importing Google Fonts for headings -->
+
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
     <style>
-        /* Additional inline CSS */
+
+        /* ========================= */
+        /* GENERAL */
+        /* ========================= */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,21 +25,33 @@
             scroll-behavior: smooth;
         }
 
-        header, footer {
+        header,
+        footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 15px 0;
         }
 
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0;
         }
 
         nav ul li a {
@@ -52,7 +72,8 @@
             padding: 100px 20px;
         }
 
-        .about-section, .artist-section {
+        .about-section,
+        .artist-section {
             padding: 50px;
             background-color: #f4f4f4;
         }
@@ -71,9 +92,22 @@
             margin-top: 50px;
         }
 
-        /* ---------- Button Styles ---------- */
+
+        /* ========================= */
+        /* BUTTON STYLES */
+        /* ========================= */
+
         .divinity-btn {
-            background: linear-gradient(45deg, #ff9800, #ff1971, #9c27b0, #3f51b5, #2196f3, #120447);
+            background: linear-gradient(
+                45deg,
+                #ff9800,
+                #ff1971,
+                #9c27b0,
+                #3f51b5,
+                #2196f3,
+                #120447
+            );
+
             color: #fff;
             font-size: 14px;
             font-weight: bold;
@@ -81,12 +115,25 @@
             border: none;
             border-radius: 25px;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            transition: transform 0.2s, box-shadow 0.2s;
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
+
+            transition:
+                transform 0.2s,
+                box-shadow 0.2s;
         }
+
 
         .insta-btn {
-            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+            background: linear-gradient(
+                45deg,
+                #f58529,
+                #dd2a7b,
+                #8134af,
+                #515bd4
+            );
+
             color: white;
             font-size: 14px;
             font-weight: bold;
@@ -94,11 +141,21 @@
             border: none;
             border-radius: 25px;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
         }
+
 
         .youtube-btn {
-            background: linear-gradient(45deg, #ff1919, #ad1616, #7c1010, #470404);
+            background: linear-gradient(
+                45deg,
+                #ff1919,
+                #ad1616,
+                #7c1010,
+                #470404
+            );
+
             color: white;
             font-size: 14px;
             font-weight: bold;
@@ -106,11 +163,20 @@
             border: none;
             border-radius: 25px;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
         }
 
+
         .email-btn {
-            background: linear-gradient(45deg, #0d47a1, #2196f3, #ffffff);
+            background: linear-gradient(
+                45deg,
+                #0d47a1,
+                #2196f3,
+                #ffffff
+            );
+
             color: #0d47a1;
             font-size: 14px;
             font-weight: bold;
@@ -118,50 +184,152 @@
             border: none;
             border-radius: 25px;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            transition: transform 0.2s, box-shadow 0.2s;
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
+
+            transition:
+                transform 0.2s,
+                box-shadow 0.2s;
         }
+
+
+        /* ========================= */
+        /* BOUNCE ANIMATION */
+        /* ========================= */
 
         .bounce-item:hover {
             animation: bounce 0.6s ease infinite;
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
         }
+
+
+        /* ================================================= */
+        /* PHONE VIEW */
+        /* ================================================= */
+
+        body.phone-view header nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px 15px;
+        }
+
+
+        /* Smaller logo in Phone View */
+
+        body.phone-view header nav > img {
+            max-width: 280px !important;
+            margin-bottom: 10px;
+            align-self: flex-start;
+        }
+
+
+        /* Navigation buttons move left */
+
+        body.phone-view header nav ul {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            justify-content: flex-start !important;
+            gap: 5px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+
+        body.phone-view header nav ul li {
+            display: block !important;
+            margin: 0 !important;
+        }
+
+
+        /* Smaller buttons */
+
+        body.phone-view header nav ul li button,
+        body.phone-view #toggleView {
+            font-size: 11px !important;
+            padding: 7px 12px !important;
+            border-radius: 15px !important;
+        }
+
+
+        /* Smaller page spacing */
+
+        body.phone-view main {
+            padding: 10px;
+        }
+
+        body.phone-view .artist-section,
+        body.phone-view .about-section {
+            padding: 20px;
+        }
+
+        body.phone-view .game-grid {
+            flex-direction: column;
+        }
+
     </style>
+
 </head>
+
+
 <body class="pc-view">
 
-<!-- Header Section -->
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
 <header>
+
     <nav>
-        <!-- Logo -->
-        <img src="1.png" alt="Divinity Games Logo" style="max-width:200px; height:auto;">
 
-        <!-- Nav Buttons -->
-        <ul style="list-style:none; display:flex; gap:10px; padding:0; margin:0;">
-            <li>
-                <a href="https://laxso.github.io/Divinity-Games/" target="_blank" style="text-decoration:none;">
-                    <button class="bounce-item" style="
-                        background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                        color: white;
-                        font-size: 14px;
-                        font-weight: bold;
-                        padding: 10px 18px;
-                        border: none;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                    ">Home</button>
-                </a>
-            </li>
-           
+
+        <!-- ========================= -->
+        <!-- LOGO -->
+        <!-- ========================= -->
+
+        <img
+            src="1.png"
+            alt="Divinity Games Logo"
+            style="
+                max-width:400px;
+                width:100%;
+                height:auto;
+            "
+        >
+
+
+        <!-- ========================= -->
+        <!-- NAVIGATION -->
+        <!-- ========================= -->
+
+        <ul>
+
+
+            <!-- SWITCH VIEW -->
 
             <li>
-                <a href="https://laxso.github.io/Updates-page/" target="_blank" style="text-decoration:none;">
-                    <button class="bounce-item" style="
+
+                <button
+                    id="toggleView"
+                    class="bounce-item"
+                    onclick="toggleViewMode()"
+
+                    style="
                         background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
                         color: white;
                         font-size: 14px;
@@ -171,173 +339,463 @@
                         border-radius: 20px;
                         cursor: pointer;
                         box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                    ">Progress Updates</button>
-                </a>
+                    "
+                >
+
+                    Switch to Phone View
+
+                </button>
+
             </li>
+
+
+            <!-- HOME -->
+
             <li>
-                <a href="https://laxso.github.io/Join-the-team/" target="_blank" style="text-decoration:none;">
-                    <button class="bounce-item" style="
-                        background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                        color: white;
-                        font-size: 14px;
-                        font-weight: bold;
-                        padding: 10px 18px;
-                        border: none;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                    ">Join the Team</button>
+
+                <a
+                    href="https://laxso.github.io/Divinity-Games/"
+                    target="_blank"
+                    style="text-decoration:none;"
+                >
+
+                    <button
+                        class="bounce-item"
+
+                        style="
+                            background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
+                            color: white;
+                            font-size: 14px;
+                            font-weight: bold;
+                            padding: 10px 18px;
+                            border: none;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                        "
+                    >
+
+                        Home
+
+                    </button>
+
                 </a>
+
             </li>
+
+
+            <!-- PROGRESS UPDATES -->
+
+            <li>
+
+                <a
+                    href="https://laxso.github.io/Updates-page/"
+                    target="_blank"
+                    style="text-decoration:none;"
+                >
+
+                    <button
+                        class="bounce-item"
+
+                        style="
+                            background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
+                            color: white;
+                            font-size: 14px;
+                            font-weight: bold;
+                            padding: 10px 18px;
+                            border: none;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                        "
+                    >
+
+                        Progress Updates
+
+                    </button>
+
+                </a>
+
+            </li>
+
+
+            <!-- JOIN THE TEAM -->
+
+            <li>
+
+                <a
+                    href="https://laxso.github.io/Join-the-team/"
+                    target="_blank"
+                    style="text-decoration:none;"
+                >
+
+                    <button
+                        class="bounce-item"
+
+                        style="
+                            background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
+                            color: white;
+                            font-size: 14px;
+                            font-weight: bold;
+                            padding: 10px 18px;
+                            border: none;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                        "
+                    >
+
+                        Join the Team
+
+                    </button>
+
+                </a>
+
+            </li>
+
+
         </ul>
 
-        <!-- Toggle View Button -->
-        <button id="toggleView" class="bounce-item" onclick="toggleViewMode()" 
-            style="
-                background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                color: white;
-                font-size: 14px;
-                font-weight: bold;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 25px;
-                cursor: pointer;
-                box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            ">
-            Switch to Phone View
-        </button>
     </nav>
+
 </header>
 
 
-<!-- Main Content -->
+
+<!-- ================================================= -->
+<!-- MAIN CONTENT -->
+<!-- ================================================= -->
+
 <main>
-    <!-- Music Recruitment Section -->
-    <section id="music" class="artist-section">
-        <h2>Interested in Becoming a Music Game Dev?</h2>
 
 
-    <p>Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled. 
-        However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.</p>
+    <!-- ================================================= -->
+    <!-- MUSIC RECRUITMENT -->
+    <!-- ================================================= -->
 
-    <div style="margin-top:20px;">
-        <a href="https://www.instagram.com/mr_blue_the_game_dev" target="_blank" style="text-decoration:none;">
-            <button class="insta-btn bounce-item">Instagram</button>
-        </a>
-        <a href="mailto:divinitygames004@gmail.com" style="text-decoration:none;">
-            <button class="email-btn bounce-item">Email Us</button>
-        </a>
-    </div>
-    
-    
-</section>
+    <section
+        id="music"
+        class="artist-section"
+    >
+
+        <h2>
+            Interested in Becoming a Music Game Dev?
+        </h2>
 
 
+        <p>
+            Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled.
+            However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.
+        </p>
 
-<!-- Character Artist Recruitment Section -->
-<section id="character-artist-section" class="artist-section">
-    <h2>Interested in Becoming an Art Game Dev?</h2>
 
-    <p>Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled. 
-        However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.</p>
+        <div style="margin-top:20px;">
 
-    <div style="margin-top:20px;">
-        <a href="https://www.instagram.com/mr_blue_the_game_dev" target="_blank" style="text-decoration:none;">
-            <button class="insta-btn bounce-item">Instagram</button>
-        </a>
-        <a href="mailto:divinitygames004@gmail.com" style="text-decoration:none;">
-            <button class="email-btn bounce-item">Email Us</button>
-        </a>
-    </div>
-    
-    
-</section>
+            <a
+                href="https://www.instagram.com/mr_blue_the_game_dev"
+                target="_blank"
+                style="text-decoration:none;"
+            >
 
-<!-- Social Media Section -->
-<section id="social-media" class="about-section" style="text-align:center;">
-    <h2>Follow Us</h2>
-    <div style="display: flex; justify-content: center; align-items: flex-start; gap: 60px; flex-wrap: wrap; margin-top: 20px;">
-        
-        <!-- Instagram -->
-        <div style="text-align: center; max-width: 280px;">
-            <a href="https://www.instagram.com/mr_blue_the_game_dev?igsh=MWlvbnVzZWFlMm1laQ%3D%3D&utm_source=qr" target="_blank" style="text-decoration:none;">
-                <button class="bounce-item insta-btn">Instagram</button>
+                <button class="insta-btn bounce-item">
+                    Instagram
+                </button>
+
             </a>
-            <div style="margin-top: 12px;">
-                <img src="IMG_0521.jpg" alt="Instagram QR Code" class="bounce-item" style="max-width:200px; border-radius:12px;">
-                <p style="margin-top:8px; font-size:16px; font-weight:bold; color:#fff;">@mr_blue_the_game_dev</p>
-            </div>
+
+
+            <a
+                href="mailto:divinitygames004@gmail.com"
+                style="text-decoration:none;"
+            >
+
+                <button class="email-btn bounce-item">
+                    Email Us
+                </button>
+
+            </a>
+
         </div>
 
-        <!-- YouTube -->
-        <div style="text-align: center; max-width: 280px;">
-            <a href="https://www.youtube.com/@mrblue6014" target="_blank" style="text-decoration:none;">
-                <button class="bounce-item youtube-btn">YouTube</button>
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- CHARACTER ARTIST RECRUITMENT -->
+    <!-- ================================================= -->
+
+    <section
+        id="character-artist-section"
+        class="artist-section"
+    >
+
+        <h2>
+            Interested in Becoming an Art Game Dev?
+        </h2>
+
+
+        <p>
+            Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled.
+            However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.
+        </p>
+
+
+        <div style="margin-top:20px;">
+
+            <a
+                href="https://www.instagram.com/mr_blue_the_game_dev"
+                target="_blank"
+                style="text-decoration:none;"
+            >
+
+                <button class="insta-btn bounce-item">
+                    Instagram
+                </button>
+
             </a>
-            <div style="margin-top: 12px;">
-                <img src="IMG_0522.jpg" alt="YouTube QR Code" class="bounce-item" style="max-width:200px; border-radius:12px;">
-                <p style="margin-top:8px; font-size:16px; font-weight:bold; color:#fff;">Mr Blue's YouTube Channel</p>
-            </div>
+
+
+            <a
+                href="mailto:divinitygames004@gmail.com"
+                style="text-decoration:none;"
+            >
+
+                <button class="email-btn bounce-item">
+                    Email Us
+                </button>
+
+            </a>
+
         </div>
-    </div>
-</section>
 
-<style>
-/* Gradient Instagram button */
-.insta-btn {
-    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
-/* Red YouTube button */
-.youtube-btn {
-    background: linear-gradient(45deg, #ff1919, #ad1616, #7c1010, #470404);
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
-/* Bounce animation */
-.bounce-item:hover {
-    animation: bounce 0.6s ease infinite;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-}
-</style>
+    </section>
 
 
-</section>
 
-  
+    <!-- ================================================= -->
+    <!-- SOCIAL MEDIA -->
+    <!-- ================================================= -->
 
-<!-- Footer Section -->
+    <section
+        id="social-media"
+        class="about-section"
+        style="text-align:center;"
+    >
+
+        <h2>
+            Follow Us
+        </h2>
+
+
+        <div
+            style="
+                display:flex;
+                justify-content:center;
+                align-items:flex-start;
+                gap:60px;
+                flex-wrap:wrap;
+                margin-top:20px;
+            "
+        >
+
+
+            <!-- INSTAGRAM -->
+
+            <div
+                style="
+                    text-align:center;
+                    max-width:280px;
+                "
+            >
+
+                <a
+                    href="https://www.instagram.com/mr_blue_the_game_dev?igsh=MWlvbnVzZWFlMm1laQ%3D%3D&utm_source=qr"
+                    target="_blank"
+                    style="text-decoration:none;"
+                >
+
+                    <button class="bounce-item insta-btn">
+                        Instagram
+                    </button>
+
+                </a>
+
+
+                <div style="margin-top:12px;">
+
+                    <img
+                        src="IMG_0521.jpg"
+                        alt="Instagram QR Code"
+                        class="bounce-item"
+
+                        style="
+                            max-width:200px;
+                            border-radius:12px;
+                        "
+                    >
+
+
+                    <p
+                        style="
+                            margin-top:8px;
+                            font-size:16px;
+                            font-weight:bold;
+                            color:#fff;
+                        "
+                    >
+
+                        @mr_blue_the_game_dev
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- YOUTUBE -->
+
+            <div
+                style="
+                    text-align:center;
+                    max-width:280px;
+                "
+            >
+
+                <a
+                    href="https://www.youtube.com/@mrblue6014"
+                    target="_blank"
+                    style="text-decoration:none;"
+                >
+
+                    <button class="bounce-item youtube-btn">
+                        YouTube
+                    </button>
+
+                </a>
+
+
+                <div style="margin-top:12px;">
+
+                    <img
+                        src="IMG_0522.jpg"
+                        alt="YouTube QR Code"
+                        class="bounce-item"
+
+                        style="
+                            max-width:200px;
+                            border-radius:12px;
+                        "
+                    >
+
+
+                    <p
+                        style="
+                            margin-top:8px;
+                            font-size:16px;
+                            font-weight:bold;
+                            color:#fff;
+                        "
+                    >
+
+                        Mr Blue's YouTube Channel
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
 <footer>
-    <p>&copy; 2024 Divinity Games.</p>
+
+    <p>
+        &copy; 2024 Divinity Games.
+    </p>
+
 </footer>
 
-<!-- JavaScript for Smooth Scrolling -->
+
+
+<!-- ================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================================= -->
+
 <script>
-    function learnMore() {
-        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+
+
+    /* ================================================= */
+    /* PHONE / PC VIEW SWITCH */
+    /* ================================================= */
+
+    function toggleViewMode() {
+
+        const body =
+            document.body;
+
+        const button =
+            document.getElementById("toggleView");
+
+
+        /* Switch to Phone */
+
+        if (
+            body.classList.contains("pc-view")
+        ) {
+
+            body.classList.remove(
+                "pc-view"
+            );
+
+            body.classList.add(
+                "phone-view"
+            );
+
+            button.textContent =
+                "Switch to PC View";
+
+        }
+
+
+        /* Switch back to PC */
+
+        else {
+
+            body.classList.remove(
+                "phone-view"
+            );
+
+            body.classList.add(
+                "pc-view"
+            );
+
+            button.textContent =
+                "Switch to Phone View";
+
+        }
+
     }
+
 </script>
 
+
 <script src="app.js"></script>
+
 
 </body>
 </html>
