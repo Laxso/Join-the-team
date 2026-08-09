@@ -1,96 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
 
     <title>Divinity Games</title>
 
-    <link rel="stylesheet" href="app.css">
+    <link
+        rel="stylesheet"
+        href="app.css"
+    >
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    >
+
 
     <style>
+
 
         /* ========================= */
         /* GENERAL */
         /* ========================= */
 
         body {
+
             font-family: Arial, sans-serif;
+
             margin: 0;
+
             padding: 0;
+
             scroll-behavior: smooth;
+
         }
+
 
         header,
         footer {
+
             background-color: #333;
+
             color: white;
+
             text-align: center;
+
             padding: 15px 0;
+
         }
+
 
         nav {
+
             display: flex;
+
             flex-direction: column;
+
             align-items: center;
+
         }
+
 
         nav ul {
+
             list-style-type: none;
+
             padding: 0;
+
             margin: 0;
+
             display: flex;
+
             align-items: center;
+
             justify-content: center;
+
             gap: 10px;
+
         }
+
 
         nav ul li {
+
             display: inline;
+
             margin: 0;
+
         }
+
 
         nav ul li a {
+
             text-decoration: none;
+
         }
+
 
         main {
+
             padding: 20px;
+
         }
+
 
         section {
+
             margin-bottom: 50px;
+
         }
 
+
         .hero {
+
             background-color: #ccc;
+
             text-align: center;
+
             padding: 100px 20px;
+
         }
+
 
         .about-section,
         .artist-section {
+
             padding: 50px;
+
             background-color: #f4f4f4;
+
         }
+
 
         .game-grid {
+
             display: flex;
+
             gap: 20px;
+
         }
+
 
         .game-item {
+
             flex: 1;
+
             text-align: center;
+
         }
 
+
         footer {
+
             margin-top: 50px;
+
         }
+
 
 
         /* ========================= */
@@ -98,6 +175,7 @@
         /* ========================= */
 
         .divinity-btn {
+
             background: linear-gradient(
                 45deg,
                 #ff9800,
@@ -109,11 +187,17 @@
             );
 
             color: #fff;
+
             font-size: 14px;
+
             font-weight: bold;
+
             padding: 10px 20px;
+
             border: none;
+
             border-radius: 25px;
+
             cursor: pointer;
 
             box-shadow:
@@ -122,10 +206,13 @@
             transition:
                 transform 0.2s,
                 box-shadow 0.2s;
+
         }
 
 
+
         .insta-btn {
+
             background: linear-gradient(
                 45deg,
                 #f58529,
@@ -135,19 +222,28 @@
             );
 
             color: white;
+
             font-size: 14px;
+
             font-weight: bold;
+
             padding: 10px 20px;
+
             border: none;
+
             border-radius: 25px;
+
             cursor: pointer;
 
             box-shadow:
                 0 4px 6px rgba(0,0,0,0.3);
+
         }
 
 
+
         .youtube-btn {
+
             background: linear-gradient(
                 45deg,
                 #ff1919,
@@ -157,19 +253,28 @@
             );
 
             color: white;
+
             font-size: 14px;
+
             font-weight: bold;
+
             padding: 10px 20px;
+
             border: none;
+
             border-radius: 25px;
+
             cursor: pointer;
 
             box-shadow:
                 0 4px 6px rgba(0,0,0,0.3);
+
         }
 
 
+
         .email-btn {
+
             background: linear-gradient(
                 45deg,
                 #0d47a1,
@@ -178,11 +283,17 @@
             );
 
             color: #0d47a1;
+
             font-size: 14px;
+
             font-weight: bold;
+
             padding: 10px 20px;
+
             border: none;
+
             border-radius: 25px;
+
             cursor: pointer;
 
             box-shadow:
@@ -191,7 +302,97 @@
             transition:
                 transform 0.2s,
                 box-shadow 0.2s;
+
         }
+
+
+
+        /* ========================= */
+        /* NAV BUTTON */
+        /* ========================= */
+
+        .nav-button {
+
+            background: linear-gradient(
+                45deg,
+                #ff1971,
+                #ad16a5,
+                #51107c,
+                #120447
+            );
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            padding: 10px 18px;
+
+            border: none;
+
+            border-radius: 20px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
+
+        }
+
+
+
+        /* ================================================= */
+        /* VIEW MODE SECTION */
+        /* ================================================= */
+
+        .view-mode-section {
+
+            width: 100%;
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 15px;
+
+            padding-top: 15px;
+
+            border-top:
+                1px solid rgba(255,255,255,0.2);
+
+        }
+
+
+        #toggleView {
+
+            background: linear-gradient(
+                45deg,
+                #ff1971,
+                #ad16a5,
+                #51107c,
+                #120447
+            );
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            padding: 10px 18px;
+
+            border: none;
+
+            border-radius: 20px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 4px 6px rgba(0,0,0,0.3);
+
+        }
+
 
 
         /* ========================= */
@@ -199,21 +400,33 @@
         /* ========================= */
 
         .bounce-item:hover {
-            animation: bounce 0.6s ease infinite;
+
+            animation:
+                bounce 0.6s ease infinite;
+
         }
+
 
         @keyframes bounce {
 
             0%,
             100% {
-                transform: translateY(0);
+
+                transform:
+                    translateY(0);
+
             }
 
+
             50% {
-                transform: translateY(-8px);
+
+                transform:
+                    translateY(-8px);
+
             }
 
         }
+
 
 
         /* ================================================= */
@@ -221,72 +434,125 @@
         /* ================================================= */
 
         body.phone-view header nav {
+
             display: flex;
+
             flex-direction: column;
+
             align-items: flex-start;
+
             padding: 10px 15px;
+
         }
+
 
 
         /* Smaller logo in Phone View */
 
         body.phone-view header nav > img {
+
             max-width: 280px !important;
+
             margin-bottom: 10px;
+
             align-self: flex-start;
+
         }
+
 
 
         /* Navigation buttons move left */
 
         body.phone-view header nav ul {
+
             display: flex !important;
+
             flex-direction: column !important;
+
             align-items: flex-start !important;
+
             justify-content: flex-start !important;
+
             gap: 5px !important;
+
             margin: 0 !important;
+
             padding: 0 !important;
+
         }
 
 
         body.phone-view header nav ul li {
+
             display: block !important;
+
             margin: 0 !important;
+
         }
+
 
 
         /* Smaller buttons */
 
         body.phone-view header nav ul li button,
         body.phone-view #toggleView {
+
             font-size: 11px !important;
+
             padding: 7px 12px !important;
+
             border-radius: 15px !important;
+
         }
+
+
+
+        /* Phone view button stays in separate section */
+
+        body.phone-view .view-mode-section {
+
+            justify-content: flex-start;
+
+            margin-top: 12px;
+
+            padding-top: 12px;
+
+        }
+
 
 
         /* Smaller page spacing */
 
         body.phone-view main {
+
             padding: 10px;
+
         }
+
 
         body.phone-view .artist-section,
         body.phone-view .about-section {
+
             padding: 20px;
+
         }
 
+
         body.phone-view .game-grid {
+
             flex-direction: column;
+
         }
+
 
     </style>
 
 </head>
 
 
+
 <body class="pc-view">
+
 
 
 <!-- ================================================= -->
@@ -298,19 +564,25 @@
     <nav>
 
 
+
         <!-- ========================= -->
         <!-- LOGO -->
         <!-- ========================= -->
 
         <img
+
             src="1.png"
+
             alt="Divinity Games Logo"
+
             style="
                 max-width:400px;
                 width:100%;
                 height:auto;
             "
+
         >
+
 
 
         <!-- ========================= -->
@@ -320,59 +592,23 @@
         <ul>
 
 
-            <!-- SWITCH VIEW -->
-
-            <li>
-
-                <button
-                    id="toggleView"
-                    class="bounce-item"
-                    onclick="toggleViewMode()"
-
-                    style="
-                        background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                        color: white;
-                        font-size: 14px;
-                        font-weight: bold;
-                        padding: 10px 18px;
-                        border: none;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                    "
-                >
-
-                    Switch to Phone View
-
-                </button>
-
-            </li>
-
 
             <!-- HOME -->
 
             <li>
 
                 <a
+
                     href="https://laxso.github.io/Divinity-Games/"
+
                     target="_blank"
+
                     style="text-decoration:none;"
+
                 >
 
                     <button
-                        class="bounce-item"
-
-                        style="
-                            background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                            color: white;
-                            font-size: 14px;
-                            font-weight: bold;
-                            padding: 10px 18px;
-                            border: none;
-                            border-radius: 20px;
-                            cursor: pointer;
-                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                        "
+                        class="bounce-item nav-button"
                     >
 
                         Home
@@ -384,30 +620,23 @@
             </li>
 
 
+
             <!-- PROGRESS UPDATES -->
 
             <li>
 
                 <a
+
                     href="https://laxso.github.io/Updates-page/"
+
                     target="_blank"
+
                     style="text-decoration:none;"
+
                 >
 
                     <button
-                        class="bounce-item"
-
-                        style="
-                            background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                            color: white;
-                            font-size: 14px;
-                            font-weight: bold;
-                            padding: 10px 18px;
-                            border: none;
-                            border-radius: 20px;
-                            cursor: pointer;
-                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                        "
+                        class="bounce-item nav-button"
                     >
 
                         Progress Updates
@@ -419,30 +648,23 @@
             </li>
 
 
+
             <!-- JOIN THE TEAM -->
 
             <li>
 
                 <a
+
                     href="https://laxso.github.io/Join-the-team/"
+
                     target="_blank"
+
                     style="text-decoration:none;"
+
                 >
 
                     <button
-                        class="bounce-item"
-
-                        style="
-                            background: linear-gradient(45deg, #ff1971, #ad16a5, #51107c, #120447);
-                            color: white;
-                            font-size: 14px;
-                            font-weight: bold;
-                            padding: 10px 18px;
-                            border: none;
-                            border-radius: 20px;
-                            cursor: pointer;
-                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                        "
+                        class="bounce-item nav-button"
                     >
 
                         Join the Team
@@ -455,6 +677,33 @@
 
 
         </ul>
+
+
+
+        <!-- ================================================= -->
+        <!-- SWITCH VIEW SECTION -->
+        <!-- ================================================= -->
+
+        <div class="view-mode-section">
+
+
+            <button
+
+                id="toggleView"
+
+                class="bounce-item"
+
+                onclick="toggleViewMode()"
+
+            >
+
+                Switch to Phone View
+
+            </button>
+
+
+        </div>
+
 
     </nav>
 
@@ -469,53 +718,85 @@
 <main>
 
 
+
     <!-- ================================================= -->
     <!-- MUSIC RECRUITMENT -->
     <!-- ================================================= -->
 
     <section
+
         id="music"
+
         class="artist-section"
+
     >
 
+
         <h2>
+
             Interested in Becoming a Music Game Dev?
+
         </h2>
 
 
+
         <p>
+
             Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled.
             However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.
+
         </p>
 
 
-        <div style="margin-top:20px;">
+
+        <div
+            style="margin-top:20px;"
+        >
+
 
             <a
+
                 href="https://www.instagram.com/mr_blue_the_game_dev"
+
                 target="_blank"
+
                 style="text-decoration:none;"
+
             >
 
-                <button class="insta-btn bounce-item">
+                <button
+                    class="insta-btn bounce-item"
+                >
+
                     Instagram
+
                 </button>
 
             </a>
+
 
 
             <a
+
                 href="mailto:divinitygames004@gmail.com"
+
                 style="text-decoration:none;"
+
             >
 
-                <button class="email-btn bounce-item">
+                <button
+                    class="email-btn bounce-item"
+                >
+
                     Email Us
+
                 </button>
 
             </a>
+
 
         </div>
+
 
     </section>
 
@@ -526,48 +807,79 @@
     <!-- ================================================= -->
 
     <section
+
         id="character-artist-section"
+
         class="artist-section"
+
     >
 
+
         <h2>
+
             Interested in Becoming an Art Game Dev?
+
         </h2>
 
 
+
         <p>
+
             Hello, and thank you for visiting this page! We’d like to let you know that this position has already been filled.
             However, if you’d like to be considered for future opportunities, feel free to send us an email! We’d love to stay in touch.
+
         </p>
 
 
-        <div style="margin-top:20px;">
+
+        <div
+            style="margin-top:20px;"
+        >
+
 
             <a
+
                 href="https://www.instagram.com/mr_blue_the_game_dev"
+
                 target="_blank"
+
                 style="text-decoration:none;"
+
             >
 
-                <button class="insta-btn bounce-item">
+                <button
+                    class="insta-btn bounce-item"
+                >
+
                     Instagram
+
                 </button>
 
             </a>
+
 
 
             <a
+
                 href="mailto:divinitygames004@gmail.com"
+
                 style="text-decoration:none;"
+
             >
 
-                <button class="email-btn bounce-item">
+                <button
+                    class="email-btn bounce-item"
+                >
+
                     Email Us
+
                 </button>
 
             </a>
+
 
         </div>
+
 
     </section>
 
@@ -578,17 +890,26 @@
     <!-- ================================================= -->
 
     <section
+
         id="social-media"
+
         class="about-section"
+
         style="text-align:center;"
+
     >
 
+
         <h2>
+
             Follow Us
+
         </h2>
 
 
+
         <div
+
             style="
                 display:flex;
                 justify-content:center;
@@ -597,119 +918,180 @@
                 flex-wrap:wrap;
                 margin-top:20px;
             "
+
         >
 
 
+
+            <!-- ========================= -->
             <!-- INSTAGRAM -->
+            <!-- ========================= -->
 
             <div
+
                 style="
                     text-align:center;
                     max-width:280px;
                 "
+
             >
 
+
                 <a
+
                     href="https://www.instagram.com/mr_blue_the_game_dev?igsh=MWlvbnVzZWFlMm1laQ%3D%3D&utm_source=qr"
+
                     target="_blank"
+
                     style="text-decoration:none;"
+
                 >
 
-                    <button class="bounce-item insta-btn">
+
+                    <button
+                        class="bounce-item insta-btn"
+                    >
+
                         Instagram
+
                     </button>
+
 
                 </a>
 
 
-                <div style="margin-top:12px;">
+
+                <div
+                    style="margin-top:12px;"
+                >
+
 
                     <img
+
                         src="IMG_0521.jpg"
+
                         alt="Instagram QR Code"
+
                         class="bounce-item"
 
                         style="
                             max-width:200px;
+                            width:100%;
                             border-radius:12px;
                         "
+
                     >
 
 
+
                     <p
+
                         style="
                             margin-top:8px;
                             font-size:16px;
                             font-weight:bold;
                             color:#fff;
                         "
+
                     >
 
                         @mr_blue_the_game_dev
 
                     </p>
 
+
                 </div>
+
 
             </div>
 
 
 
+            <!-- ========================= -->
             <!-- YOUTUBE -->
+            <!-- ========================= -->
 
             <div
+
                 style="
                     text-align:center;
                     max-width:280px;
                 "
+
             >
 
+
                 <a
+
                     href="https://www.youtube.com/@mrblue6014"
+
                     target="_blank"
+
                     style="text-decoration:none;"
+
                 >
 
-                    <button class="bounce-item youtube-btn">
+
+                    <button
+                        class="bounce-item youtube-btn"
+                    >
+
                         YouTube
+
                     </button>
+
 
                 </a>
 
 
-                <div style="margin-top:12px;">
+
+                <div
+                    style="margin-top:12px;"
+                >
+
 
                     <img
+
                         src="IMG_0522.jpg"
+
                         alt="YouTube QR Code"
+
                         class="bounce-item"
 
                         style="
                             max-width:200px;
+                            width:100%;
                             border-radius:12px;
                         "
+
                     >
 
 
+
                     <p
+
                         style="
                             margin-top:8px;
                             font-size:16px;
                             font-weight:bold;
                             color:#fff;
                         "
+
                     >
 
                         Mr Blue's YouTube Channel
 
                     </p>
 
+
                 </div>
+
 
             </div>
 
 
         </div>
+
 
     </section>
 
@@ -724,9 +1106,13 @@
 
 <footer>
 
+
     <p>
+
         &copy; 2024 Divinity Games.
+
     </p>
+
 
 </footer>
 
@@ -745,57 +1131,82 @@
 
     function toggleViewMode() {
 
+
         const body =
             document.body;
 
+
         const button =
-            document.getElementById("toggleView");
+            document.getElementById(
+                "toggleView"
+            );
 
 
-        /* Switch to Phone */
+
+        /* ========================= */
+        /* SWITCH TO PHONE */
+        /* ========================= */
 
         if (
-            body.classList.contains("pc-view")
+            body.classList.contains(
+                "pc-view"
+            )
         ) {
+
 
             body.classList.remove(
                 "pc-view"
             );
 
+
             body.classList.add(
                 "phone-view"
             );
+
 
             button.textContent =
                 "Switch to PC View";
 
+
         }
 
 
-        /* Switch back to PC */
+
+        /* ========================= */
+        /* SWITCH BACK TO PC */
+        /* ========================= */
 
         else {
+
 
             body.classList.remove(
                 "phone-view"
             );
 
+
             body.classList.add(
                 "pc-view"
             );
 
+
             button.textContent =
                 "Switch to Phone View";
 
+
         }
+
 
     }
 
+
 </script>
+
 
 
 <script src="app.js"></script>
 
 
 </body>
+
+</html>
 </html>
